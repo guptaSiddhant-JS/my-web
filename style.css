@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Ubuntu+Condensed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* navBar Styling */
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 30px 0;
+  background-color: transparent;
+  font-family: "Ubuntu", sans-serif;
+}
+.navbar .sticky {
+  padding: 30px 0;
+  color: #c3073f;
+}
+.max_width {
+  /* min-width: 1300px; */
+  padding: 0 80px;
+  margin: auto;
+}
+.navbar .max_width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a {
+  /* color: whitesmoke; */
+  color: red;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease-out;
+}
+.navbar .menu li a:hover {
+  color: #c3073f;
+}
+.menu__btn {
+  color: aliceblue;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 900px) {
+  .max_width {
+    padding: 0 50px;
+  }
+
+  /* .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: #111;
+    padding-top: 80px;
+  } */
+  /* .navbar .menu li {
+    display: block;
+    text-align: center;
+  } */
+  /* .navbar .menu li a {
+    display: inline-block;
+    margin-top: 20px;
+  } */
+  /* navbar btn */
+  /* .menu__btn {
+    color: aliceblue;
+    font-size: 23px;
+    cursor: pointer;
+    display: block;
+    z-index: 999;
+  } */
+}
+
+/* Home */
+.home {
+  display: flex;
+  background: url("https://wallpapercave.com/wp/wp5837016.jpg") no-repeat left;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  color: antiquewhite;
+  min-height: 500px;
+  font-family: "Ubuntu", sans-serif;
+}
+.home .max_width {
+  margin: auto 0 auto 40px;
+}
+.home .home__content .text__1 {
+  font-size: 27px;
+}
+.home .home__content .text__2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .home__content .text__3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+.home .home__content .text__3 span {
+  color: #c3073f;
+  font-weight: 600;
+}
+.home__resume {
+  color: #c3073f;
+  font-size: 30px;
+}
+
+/* about me */
+.aboutMe {
+  background: aqua;
+}
+.aboutMe__content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutMe__container {
+  background-color: beige;
+  width: 100%;
+  max-width: 98rem;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 2, 2);
+  border-radius: 0.8rem;
+}
+.aboutMe img {
+  width: 60%;
+}
+.aboutMe__img {
+  min-width: 35rem;
+  min-width: 35rem;
+  padding: 0;
+  /* height: 30rem; */
+  /* background-color: red; */
+  justify-content: center;
+  transform: translateX(-8rem);
+  position: relative;
+}
+.aboutMe__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.8rem;
+}
+/* sudo element */
+.aboutMe__img::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: linear-gradient(
+    to right,
+    rgba(76, 172, 254, 0.8),
+    rgba(0, 242, 254, 0.8)
+  ); */
+  box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+/* Project */
+.project__content {
+  height: 100vh;
+  width: 100%;
+  background-color: skyblue;
+}
+/* Contact Me  */
+
+.contactMe {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: springgreen;
+}
+.contactMe::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: steelblue;
+}
+.contactMe .contactMe__container {
+  position: relative;
+  min-width: 1100px;
+  min-height: 550px;
+  display: flex;
+  z-index: 1000;
+}
+.contactMe__content {
+  position: absolute;
+  top: 40px;
+  width: 350px;
+  height: calc(100% - 80px);
+  background-color: aqua;
+  z-index: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10% 0 0 10%;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+.contactMe__content h2 {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.contactMe__info {
+  position: relative;
+  margin: 20px 0;
+}
+
+.contactMe__info li {
+  position: relative;
+  list-style: none;
+  display: flex;
+  margin: 20px 0;
+  cursor: pointer;
+  align-items: flex-start;
+}
+.contactMe__info li span:nth-child(1) {
+  width: 30px;
+  min-width: 30px;
+}
+
+.contactMe__info li span:nth-child(1) img {
+  max-width: 100%;
+  filter: invert(1);
+  opacity: 0.5;
+}
+.contactMe__info li span:nth-child(2) {
+  color: white;
+  margin-left: 10px;
+  font-weight: 300;
+
+  min-width: 30px;
+}
+.contactMe__info li:hover span:nth-child(1) img,
+.contactMe__info li:hover span:nth-child(2) {
+  opacity: 1;
+  color: #c3073f;
+}
+.contactMe__socialMedia {
+  position: relative;
+  display: flex;
+}
+
+.contactMe__socialMedia li {
+  list-style: none;
+  margin-right: 15px;
+}
+.contactMe__socialMedia li a {
+  text-decoration: none;
+}
+.contactMe__socialMedia li a img {
+  width: 50px;
+  height: 50px;
+  filter: invert(1);
+  opacity: 0.5;
+}
+.contactMe__socialMedia li a img:hover {
+  opacity: 1;
+}
+
+.contactMe__form {
+  position: absolute;
+  padding: 70px 50px;
+  background: white;
+  padding-left: 350px;
+  margin: 150px 0 0 250px;
+  height: 100%;
+  min-width: 70%;
+  max-width: 70%;
+  box-shadow: 0 20px 20px rgba(1, 0, 0, 0.5);
+}
+
+.contactMe__form h2 {
+  color: #c3073f;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.contactMe__formBox {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.contactMe__inputBox {
+  position: relative;
+  margin: 0 0 35px 0;
+}
+
+.contactMe__inputBox .w50 {
+  width: 60%;
+  margin-right: 10px;
+}
+.contactMe__inputBox .w100 {
+  width: 110%;
+}
+.contactMe__inputBox input,
+textarea {
+  width: 100%;
+  resize: none;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 300;
+  border: none;
+  border-bottom: 1px solid red;
+  outline: none;
+}
